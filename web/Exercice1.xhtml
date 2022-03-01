@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>Facelet Title</title>
+    </h:head>
+    <h:body>
+        <table align="center">
+            <h:form>
+                <tr><td colspan="2"> <h1>Gestion des produits</h1></td></tr>
+                <tr>
+                    <td>titre:</td><td><h:inputText value="#{produit.titre}"></h:inputText></td>
+                </tr>
+                <tr>
+                    <td>prix:</td><td><h:inputText value="#{produit.prix}"></h:inputText></td>
+                </tr>
+                <tr>
+                    <td>code:</td><td><h:inputText value="#{produit.code}"></h:inputText></td>
+                </tr>
+                <tr>
+                    <td>expiration:</td><td><h:inputText value="#{produit.expiration}"></h:inputText></td>
+                </tr>
+                <tr><td colspan="2"><h:commandButton action="#{produit.calculefinale()}" value="calculer"></h:commandButton></td></tr>
+                <tr><td colspan="2"> le prix finale est: <h:outputLabel value="#{produit.prixfinale}"></h:outputLabel></td></tr>
+            </h:form>
+        </table>
+        <br></br>
+    </h:body>
+</html>
+
