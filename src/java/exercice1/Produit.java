@@ -64,7 +64,13 @@ public class Produit {
     
     }
     
+    public String redirection()
+    {
     
+    //traitement
+        return "index.xhtml?faces-redirect=true";
+    
+    }
     
     
 }

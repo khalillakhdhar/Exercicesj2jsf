@@ -25,6 +25,10 @@
                 <tr><td colspan="2"> le prix finale est: <h:outputLabel value="#{produit.prixfinale}"></h:outputLabel></td></tr>
             </h:form>
         </table>
+        
+        <h:form>
+            <h:commandButton value="redirect" action="#{produit.redirection()}"></h:commandButton>
+        </h:form>
         <br></br>
     </h:body>
 </html>
